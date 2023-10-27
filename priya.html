@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cake Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Cake Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Our Cake Shop</h2>
+        <p>Indulge in the sweetest treats in town.</p>sS
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Menu</h2>
+        <div class="cake-item">
+            <img src="cake1.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>Moist and decadent chocolate cake</p>
+            <span class="price">$25</span>
+        </div>
+        <div class="cake-item">
+            <img src="cake2.jpg" alt="Strawberry Cake">
+            <h3>Strawberry Cake</h3>
+            <p>Fresh strawberries and cream</p>
+            <span class="price">$30</span>
+        </div>
+        <!-- Add more cake items here -->
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-item">
+            <img src="gallery1.jpg" alt="Cake Gallery 1">
+        </div>
+        <div class="gallery-item">
+            <img src="gallery2.jpg" alt="Cake Gallery 2">
+        </div>
+        <!-- Add more gallery items here -->
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to place an order? Contact us!</p>
+        <a href="mailto:info@cakeshop.com">info@cakeshop.com</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cake Shop</p>
+    </footer>
+</body>
+</html>
+styles.css
+
+css
+Copy code
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Hero section styling */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Menu section styling */
+.menu {
+    padding: 50px;
+    background-color: #fff;
+}
+
+.cake-item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.cake-item img {
+    max-width: 100%;
+}
+
+.price {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Gallery section styling */
+.gallery {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Contact section styling */
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact a {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
